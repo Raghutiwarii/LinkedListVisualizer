@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Linked List</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/22b6d17b31.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="text-container" style="margin: auto;">
+                <strong>Linked <span class="word-style">List</span> Visualizer</strong>
+            </div>
+        </div>
+    </header>
+    
+    <div class="animation-container">
+    </div>
+    <div class="form-container">
+        <form method="POST" id="set-form">
+            <input type="text" name="set-index" id="set-index" placeholder="Enter Position" autocomplete="off">
+            <div class="error-container">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error-message"></span>
+            </div>
+            <input type="text" name="set-data" id="set-data" placeholder="Node Data" autocomplete="off">
+            <div class="error-container">
+                <i class="fa-solid fa-circle-exclamation"></i> 
+                <span class="error-message"></span>
+            </div>
+            <input type="submit" value="Set">
+        </form>
+        <form method="POST" id="insert-form">
+            <input type="text" name="insert-index" id="insert-index" placeholder="Enter Position" autocomplete="off">
+            <div class="error-container">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error-message"></span>
+            </div>
+            <input type="text" name="insert-data" id="insert-data" placeholder="Node Data" autocomplete="off">
+            <div class="error-container">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error-message"></span>
+            </div>
+            <input type="submit" value="Insert">
+        </form>
+        <form method="POST" id="add-form">
+            <input type="text" name="add-data" id="add-data" placeholder="Node Data" autocomplete="off">
+            <div class="error-container">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error-message"></span>
+            </div>
+            <input type="submit" value="Add">
+        </form>
+        <form method="POST" id="remove-form">
+            <input type="text" name="remove-index" id="remove-index" placeholder="Enter Position" autocomplete="off">
+            <div class="error-container">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span class="error-message"></span>
+            </div>
+            <input type="submit" value="Remove">
+        </form>
+    </div>
+    <script src="JavaScript/theme.js"></script>
+    <script src="JavaScript/formValidation.js"></script>
+    <script src="JavaScript/app.js"></script>
+</body>

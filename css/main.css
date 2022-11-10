@@ -1,0 +1,67 @@
+:root {
+    --headerBackground: rgb(24, 170, 211);
+    --background: rgb(124, 227, 219);
+    --fontColor: rgb(0, 0, 0);
+    --mainColor: linear-gradient(90deg, #555895, #0779f3);
+    --varAnimationDuration: 600ms;
+    --inputBackground: rgb(255, 255, 255);
+    --settingsContainerTop:60px
+}
+html {
+    font-size: 16px;
+}
+body {
+    background-color: var(--background);
+    font-family: 'Alegreya Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.variable {
+    display: none;
+    margin:10px;
+    height:3em;
+    width:3em;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: var(--mainColor);
+    color:white;
+}
+i[class="fa-solid fa-arrow-right-long"]{
+    display: none;
+    transform: scale(0);
+}
+.animation-container {
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom:5px;
+    font-size: 3rem;
+    color:var(--fontColor);
+    align-items: center;
+}
+.animation-container div{
+    font-size: 1.25rem;
+}
+@keyframes appear {
+    0% {
+        transform:scale(0);
+    }
+    90% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes rotate-appear {
+    0% {
+        transform:scale(0) rotate(-30deg);
+    }
+    70% {
+        transform: scale(1.2) rotate(30deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
